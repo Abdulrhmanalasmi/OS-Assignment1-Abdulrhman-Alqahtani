@@ -9,7 +9,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
+[Through this assignment, I gained a deep understanding of how multithreading allows a single program to handle multiple tasks simultaneously by sharing CPU resources. I learned how to implement the Runnable interface and manage thread states like Running, Waiting, and Terminated using Java's built-in methods. It was fascinating to see how the Round-Robin algorithm ensures fairness by giving each thread a specific time quantum before forcing it to yield the CPU. I also understood the importance of thread coordination using join() to ensure the main simulation only finishes after all child threads have completed their work. This experience showed me that concurrency is not just about running things at the same time, but about managing their lifecycle and communication efficiently.]
 
 ---
 
@@ -17,7 +17,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe the specific challenge. Was it understanding the code? Implementing a feature? Using Git? Explain what made it difficult and how it relates to the course concepts.]
+[The most challenging part was accurately implementing the Context Switch Counter and the Waiting Time tracking. It was difficult to determine the exact point in the code where the CPU officially switches from one process to another without double-counting the transitions. Additionally, calculating the waiting time required me to carefully track the difference between the initial creation time and the final completion time while accounting for the time spent executing. Understanding the "yield" logic in the provided starter code also took some time, as I had to trace how threads move back to the ready queue. These challenges were directly related to the core OS concepts of scheduling and process management we studied in class.]
 
 ---
 
@@ -25,7 +25,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
+[I overcame these challenges by using a systematic debugging approach and utilizing external learning resources. I spent a significant amount of time reading the official Java documentation on the Thread class and researching how Round-Robin scheduling is visualized in real-time. Using System.out.println() with ANSI colors helped me track the flow of execution in the terminal, which made it easier to see exactly when a context switch occurred. I also drafted my logic and technical answers in external notes to refine my understanding before implementing them in the final code. Furthermore, I used AI as a learning assistant to clarify complex concepts like "thread yielding" and to help me structure my documentation professionally.]
 
 ---
 
@@ -33,7 +33,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Give specific examples from real applications you use (web browsers, games, mobile apps, etc.). Explain why threads are useful in those scenarios. Connect to what you learned in this assignment.]
+[Multithreading is essential in modern software, such as Web Browsers, where one thread handles the user interface while others download images or execute scripts in the background. Another great example is in Video Games, where separate threads are used for physics calculations, audio processing, and rendering graphics to ensure a smooth player experience. In mobile apps, threads prevent the "freezing" of the screen by moving heavy data processing tasks away from the main UI thread. Understanding these concepts allows me to build applications that are more responsive, efficient, and capable of handling high loads of data. The principles I learned in this assignment, like time-slicing and resource sharing, are the same ones used by large-scale systems like Netflix or Google to serve millions of users.]
 
 ---
 
