@@ -1,5 +1,13 @@
+# OS Assignment 1: Multithreading Simulation
+**Student Name:** Abdulrahman Al-Qahtani  
+**Student ID:** 443050700  
+**University Email:** 443050700@std.psau.edu.sa  
+**Video Demonstration:** 
+
 # CS3701 Operating Systems - Assignment 1: Multithreading
 ## Round-Robin CPU Scheduler Simulation
+
+
 
 ### 📋 Assignment Overview
 
@@ -553,3 +561,13 @@ Your work will be evaluated based on the following criteria:
 **Late Policy:** -2 marks per day late
 
 Good luck! Start early, commit regularly, and demonstrate your understanding of Java threading through this assignment.
+
+---
+
+## 📝 Note on Development Process
+
+During the development of this project, I spent several days researching threading concepts and drafting my technical answers and logs in external notes. To ensure technical accuracy and professional English phrasing, I utilized AI tools (Gemini) as a **learning assistant** to refine my explanations and structure the documentation files. 
+
+Once the logic was clear and the drafts were ready, I committed the files to GitHub sequentially. This explains why the commit history shows the final versions being uploaded after a period of offline preparation and study. I have a full understanding of the implemented code and the underlying Operating Systems concepts.
+
+---
