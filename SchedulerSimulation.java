@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Random;
-// --- المهمة 1: استيراد مكتبة القفل ---
+
 import java.util.concurrent.locks.ReentrantLock;
 
 // ANSI Color Codes for enhanced terminal output
@@ -85,7 +85,6 @@ class Process implements Runnable {
                           " │ Overall progress: " + overallProgressBar);
         System.out.println(Colors.MAGENTA + "    Remaining time: " + remainingTime + "ms" + Colors.RESET);
         
-        // --- المهمة 1: حماية العدادات عند اكتمال العملية ---
         if (remainingTime <= 0) {
             SchedulerSimulation.countersLock.lock();
             try {
@@ -133,7 +132,7 @@ class Process implements Runnable {
             Thread.sleep(remainingTime); // Run until completion
             remainingTime = 0; // Mark the process as completed
             
-            // --- المهمة 1: حماية العدادات عند اكتمال العملية ---
+         
             SchedulerSimulation.countersLock.lock();
             try {
                 SchedulerSimulation.completedProcessCount++;
@@ -174,7 +173,7 @@ class Process implements Runnable {
 
 public class SchedulerSimulation {
 
-    // --- المهمة 1: المتغيرات المطلوبة في الواجب وقفل الحماية ---
+    
     public static int contextSwitchCount = 0;
     public static int completedProcessCount = 0;
     public static int totalWaitingTime = 0;
@@ -285,7 +284,7 @@ public class SchedulerSimulation {
             // Check if the process is not finished
             if (!process.isFinished()) {
                 
-                // --- المهمة 1: حماية عداد تبديل السياق ---
+             
                 countersLock.lock();
                 try {
                     contextSwitchCount++;
@@ -302,7 +301,7 @@ public class SchedulerSimulation {
                                       Colors.RESET + Colors.YELLOW + " is the last process → running to completion" + 
                                       Colors.RESET);
                     
-                    // --- المهمة 1: حماية عداد تبديل السياق ---
+                 
                     countersLock.lock();
                     try {
                         contextSwitchCount++;
